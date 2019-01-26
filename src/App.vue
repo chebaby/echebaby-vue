@@ -1,23 +1,32 @@
 <template>
-    <div id="app">
-        <!--preloader starts
-        <div class="loader_bg"><div class="loader"></div></div>
-        preloader ends-->
+	<div id="app">
+		<!--preloader starts-->
+		<div ref="loader" class="loader_bg">
+			<div class="loader"></div>
+		</div>
+		<!--preloader ends-->
 
-        <TheNavbar />
-    </div>
+		<TheNavbar />
+	</div>
 </template>
 
 <script>
-import TheNavbar from './components/TheNavbar.vue';
+	import TheNavbar from './components/TheNavbar.vue';
 
-export default {
+	export default {
 
-    components: {
+		components: {
 
-        TheNavbar
-    }
-}
+			TheNavbar
+		},
+
+		mounted() {
+
+			var loaderElm = this.$refs.loader;
+
+			$(loaderElm).fadeToggle();
+		}
+	}
 </script>
 
 <style lang="scss">
