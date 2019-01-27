@@ -76,8 +76,34 @@
         name: 'TheNavbar',
 
         mounted() {
-            console.log('Navbar');
-            console.log($.fn.jquery);
+
+            console.log('%cTheNavbar', 'background: #222; color: #bada55; padding: 4px;');
+
+            // menu background color change while scroll
+
+            $(window).on('scroll', function () {
+                var menu_area = $('.nav-area');
+                if ($(window).scrollTop() > 200) {
+                    menu_area.addClass('sticky_navigation');
+                } else {
+                    menu_area.removeClass('sticky_navigation');
+                }
+            });
+
+            // menu hides after click (mobile menu)
+
+            $(document).on('click', '.navbar-collapse.in', function (e) {
+                if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                    $(this).collapse('hide');
+                }
+            });
+
+            // scrollspy js (bootstrap plugin)
+
+            $('body').scrollspy({
+                target: '.navbar-collapse',
+                offset: 195
+            });
         }
     }
 </script>
