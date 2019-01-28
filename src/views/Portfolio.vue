@@ -23,9 +23,9 @@
                 </div>
                 <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="gallery-items wow fadeInDown" data-wow-delay="0.4s">
-                        <a class="view img" href="@/assets/images/portfolio/doctori.jpg">
+                        <a class="view img" :href="doctori.original">
                             
-                            <img src="../assets/images/portfolio/small/doctori.png" alt="portfolio image"> 
+                            <img :src="doctori.small" alt="portfolio image"> 
                         </a>
 
                         <div class="gallery-text">
@@ -35,8 +35,8 @@
                 </div>
                 <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="gallery-items wow fadeInRight" data-wow-delay="0.6s">
-                        <a class="view img" href="@/assets/images/portfolio/tripdiem.jpg"> 
-                            <img src="../assets/images/portfolio/small/tripdiem.png" alt="portfolio image"> 
+                        <a class="view img" :href="tripdiem.original"> 
+                            <img :src="tripdiem.small" alt="portfolio image"> 
                         </a>
 
                         <div class="gallery-text">
@@ -46,8 +46,8 @@
                 </div>
                 <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="gallery-items wow fadeInLeft" data-wow-delay="0.8s">
-                        <a class="view img" href="@/assets/images/portfolio/fooz.jpg"> 
-                            <img src="../assets/images/portfolio/small/fooz.png" alt="portfolio image"> 
+                        <a class="view img" :href="fooz.original"> 
+                            <img :src="fooz.small" alt="portfolio image"> 
                         </a>
 
                         <div class="gallery-text">
@@ -57,8 +57,8 @@
                 </div>
                 <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="gallery-items wow fadeInDown" data-wow-delay="1s">
-                        <a class="view img" href="@/assets/images/portfolio/small/5.png"> <!--edit image here-->
-                            <img src="../assets/images/portfolio/small/5.png" alt="portfolio image"> <!--edit image here-->
+                        <a class="view img" :href="placeholder.original"> <!--edit image here-->
+                            <img :src="placeholder.small" alt="portfolio image"> <!--edit image here-->
                         </a>
 
                         <div class="gallery-text">
@@ -68,8 +68,8 @@
                 </div>
                 <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="gallery-items wow fadeInRight" data-wow-delay="1.2s">
-                        <a class="view img" href="@/assets/images/portfolio/6.png">
-                            <img src="../assets/images/portfolio/small/6.png" alt="portfolio image">
+                        <a class="view img" :href="placeholder.original">
+                            <img :src="placeholder.small" alt="portfolio image">
                         </a>
 
                         <div class="gallery-text">
@@ -92,6 +92,22 @@
                 fundbid : {
                     original : require('../assets/images/portfolio/fundbid.jpg'),
                     small : require('../assets/images/portfolio/small/fundbid.png')
+                },
+                doctori : {
+                    original : require('../assets/images/portfolio/doctori.jpg'),
+                    small : require('../assets/images/portfolio/small/doctori.png')
+                },
+                tripdiem : {
+                    original : require('../assets/images/portfolio/tripdiem.jpg'),
+                    small : require('../assets/images/portfolio/small/tripdiem.png')
+                },
+                fooz : {
+                    original : require('../assets/images/portfolio/fooz.jpg'),
+                    small : require('../assets/images/portfolio/small/fooz.png')
+                },
+                placeholder : {
+                    original : require('../assets/images/portfolio/1.png'),
+                    small : require('../assets/images/portfolio/small/1.png')
                 }
             }
         },
