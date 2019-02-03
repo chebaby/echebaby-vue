@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="h_100">
 		<!--slider area starts-->
 		<div id="home"></div>
 		<div class="banner-area" id="slider-area">
@@ -11,7 +11,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<h2>Nour-Eddine ECH-CHEBABY</h2>
-									<vue-typed-js :strings="['Back-end Developer.', 'Front-end Enthusiastic', 'Freelancer.']" :typeSpeed="90">
+									<vue-typed-js :strings="['Back-end Developer.', 'Front-end Enthusiastic', 'Freelancer.']" :typeSpeed="90" :loop="true">
 										<div class="typing text-affect"></div>
 									</vue-typed-js>
 									<router-link to="/contact" tag="p" class="banner-btn">

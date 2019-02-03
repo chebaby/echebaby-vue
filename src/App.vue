@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="app" class="h_100">
 		<!--preloader starts-->
 		<div ref="loader" class="loader_bg">
 			<div class="loader"></div>
@@ -12,6 +12,7 @@
 
 <script>
 	import TheNavbar from './components/TheNavbar.vue';
+	import WOW from 'wowjs';
 
 	export default {
 
@@ -22,9 +23,14 @@
 
 		mounted() {
 
+			console.log('%cApp', 'background: #222; color: #bada55; padding: 4px;');
+
 			var loaderElm = this.$refs.loader;
 
 			$(loaderElm).fadeToggle();
+
+
+			new WOW.WOW().init();
 		}
 	}
 </script>

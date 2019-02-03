@@ -1,9 +1,9 @@
 import Vue from 'vue';
-import 'bootstrap'
 import App from './App.vue';
 import router from './router';
+import VueTypedJs from 'vue-typed-js';
+import 'bootstrap'
 import './registerServiceWorker';
-import VueTypedJs from 'vue-typed-js'
 
 Vue.use(VueTypedJs);
 
