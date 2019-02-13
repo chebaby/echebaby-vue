@@ -129,8 +129,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-						<p>Made with <span style="font-size:100%;color:red;">&hearts;</span>
-							<a href="https://www.codester.com/user/MouriTheme/" target="_blank">Nour-Eddine ECH-CHEBABY</a></p>
+						<p class="remove-margins">
+							Made with <span style="font-size: 2rem; color:red;">&hearts;</span> 
+							AND 
+							<a href="https://vuejs.org" target="_blank">
+								<img :src="vuejsIcon" alt="Vuejs" style="height: 15px;">
+							</a>
+						</p>
 						</div>
 					</div>
 				</div>
@@ -141,5 +146,14 @@
 	</template>
 
 	<script>
-		export default {}
+		export default {
+
+			data() {
+
+				return {
+
+					vuejsIcon : require('../assets/images/icon/vuejs.svg')
+				}
+			}
+		}
 	</script>
