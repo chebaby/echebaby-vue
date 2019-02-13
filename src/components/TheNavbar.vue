@@ -18,7 +18,7 @@
                         <div class="main-menu">
                             <div class="navbar navbar-cus">
                                 <div class="navbar-header">
-                                    <router-link to="/">
+                                    <router-link to="/" exact>
                                         <a class="navbar-brand">Nour-Eddine</a>
                                     </router-link>
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,7 +32,7 @@
                                 <div class="navbar-collapse collapse">
                                     <nav>
                                         <ul class="nav navbar-nav navbar-right">
-                                            <router-link tag="li" active-class="active" to="/">
+                                            <router-link tag="li" active-class="active" to="/" exact>
                                                 <a class="smooth-menu">Home</a>
                                             </router-link>
                                             <router-link tag="li" active-class="active" to="/about">
