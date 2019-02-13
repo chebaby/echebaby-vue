@@ -11,7 +11,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<h2>Nour-Eddine ECH-CHEBABY</h2>
-									<vue-typed-js :strings="['Back-end Developer.', 'Front-end Enthusiastic', 'Freelancer.']" :typeSpeed="90" :loop="true">
+									<vue-typed-js :strings="['Back-end Developer.', 'Front-end Enthusiastic.', 'Freelancer.']" :typeSpeed="90" :loop="true">
 										<div class="typing text-affect"></div>
 									</vue-typed-js>
 									<router-link to="/contact" tag="p" class="banner-btn">
