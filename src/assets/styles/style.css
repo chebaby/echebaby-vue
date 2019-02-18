@@ -245,6 +245,7 @@ img {
 
 .sticky_navigation .nav li a {
     color: #333333;
+    text-shadow: none;
 }
 
 .sticky_navigation .nav li.active a{
@@ -286,12 +287,17 @@ img {
 .navbar-right li{
     display: inline-block;
     float: none;
+    font-family: "DosisSemiBold";
+    font-size: 1.1em;
+    letter-spacing: 0.2rem;
 }
 
 .navbar-right li a{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
+    text-shadow: 1px 1px 41px #6d200f;
+
 }
 
 .navbar-right li.active a{
