@@ -80,7 +80,6 @@
 
             console.log('%cTestimonial', 'background: #222; color: #bada55; padding: 4px;');
 
-            // 
 
             $("#testimonial-slider").owlCarousel({
                 items: 1,
